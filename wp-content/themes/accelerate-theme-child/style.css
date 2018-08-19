@@ -19,6 +19,11 @@ Text Domain:  accelerate-theme-child
 .button {
 	background: none repeat scroll 0 0 #45ac9d;
 }
+
+#masthead nav ul li {
+  float: left;
+  margin: 0 10px;
+}
 .blog-post {
 	width: 50%;
 	float: left;
@@ -38,4 +43,83 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+.individual-featured-work {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.individual-featured-work h3 {
+  text-align: center;
+}
+
+
+.featured-work h4 {
+  font: 500 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/*Case Studies*/
+
+article.case-study {
+  margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+  float: left;
+  width: 314px;
+  margin: 0 40px 0 0;
+}
+div.case-study-images {
+  float: left;
+  width: 606px;
+}
+
+div.case-study-images img {
+  margin-bottom:100px;
+  border:1px solid #dddddd;
+
+}
+h2 {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  h4 {
+      font: 500 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+      color: #a6a6a6;
+
+}
+/*Archive Case Studies*/
+
+#Content {
+	color: #45ac9d;
+}
+
+/*Social Media Navigation*/
+
+.menu-item-47379 {
+display: inline-block;
+margin-right: 5px;
+
+
+}
+
+.menu-item-47380 {
+  display:inline-block;
+  margin-right: 5px;
+
+
+}
+.menu-item-47381 {
+  display:inline-block;
+  margin-right: 5px;
+
+
 }
