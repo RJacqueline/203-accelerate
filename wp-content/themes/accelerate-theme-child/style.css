@@ -64,10 +64,9 @@ Text Domain:  accelerate-theme-child
 }
 
  .widget-area {
-   overflow: hidden;
-   float: right;
-   text-align: center;
-   display: inline-block;
+   width: 50px;
+   float: left;
+   margin-bottom: 2em;
 }
 
 .widget-area h3 {
