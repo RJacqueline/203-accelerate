@@ -5,16 +5,21 @@
             <div class="aps-panel-body">
                 <div class="aps-row">
                     <div class="aps-col-three-third">
-                        <h2><?php _e('WP All Club', 'accesspress-social-icons'); ?></h2>
-                        <div class="ap-tab-wrapper">
-                            <h2><span style="text-decoration: underline;">What is WPAll?</span></h2>
-<p>WPAll is an ultimate <strong>WP Club</strong> for <strong>online WordPress Resources</strong>.</p>
-<p>It is a go-to <strong>WordPress resource club</strong> where you can get only hand-picked, tested, genuine and carefully written useful information about various aspects of WordPress. Such information will help you<strong> learn WordPress</strong>,<strong> work efficiently with WordPress, keep up to date with WordPress</strong> and most of all <strong>shares authentic and genuine knowledge / information about WordPress</strong> around the globe.</p>
-<p>Besides information, we feature the best of the<strong> free and premium WordPress themes</strong>, <strong>templates, plugins, add-ons</strong>, <strong>deals etc.</strong> From the themes, plugins to WordPress development companies, theme/ plugin authors, stores, marketplaces, WP customization and support companies, WP coupons and deals etc. are put together for users' convenience.</p>
-<p>Similarly, WPAll is a collection of the insightful and resourceful WordPress articles, tips and tricks, blogs, WP news and updates etc. Comprehensive WordPress tutorials and guides for the beginners as well as full-fledged technical WP articles and blogs can be found on the site.</p>
-<p>If you are one of the WordPress contributors i.e. engineer, theme/ plugin developer, designer, blogger, support provider or anyone, let us know. We can help you spread your words.</p>
-                          
-                          <p><a href="http://wpall.club" class="button-primary">Check more WP Resources</a></p>  
+                        <h2><?php _e('More WordPress Resources', 'accesspress-social-icons'); ?></h2>
+                        <div>
+                               <p><strong>AccessPress Social Icons</strong> works best with every WordPress theme. It's even more remarkable when used with popular themes like VMagazine and AccessPress Parallax.</p>
+                            
+                                <p>AND IF THIS PLUGIN HAS IMPRESSED YOU, THEN YOU WOULD ENJOY OUR OTHER PROJECTS TOO. DO CHECK THESE OUT :</p>
+                            
+                                <p><a href="https://wpall.club/">WPAll Club</a> -  A complete WordPress resources club. WordPress tutorials, blogs, curated free and premium themes and plugins, WordPress deals, offers, hosting info and more.</p>
+                            
+                               <p> <a href="https://themeforest.net/user/accesskeys/portfolio">Premium WordPress Themes</a> -   <strong>6 premium WordPress</strong> themes well suited for all sort of websites. Professional, well coded and highly configurable themes for you. </p>
+                            
+                                  <p>  <a href="https://codecanyon.net/user/accesskeys/portfolio?Ref=AccessKeys">Premium WordPress Plugins</a> - <strong>45+ premium WordPress plugins</strong> of many different types. High user ratings, great quality and best sellers in CodeCanyon marketplace. </p>
+                                
+                                  <p>  <a href="https://accesspressthemes.com/">AccessPress Themes</a> - <strong>AccessPress Themes</strong> has 50+ beautiful and elegant, fully responsive, multipurpose themes to meet your need for free and commercial basis.</p>
+                                
+                                  <p>  <a href="https://8degreethemes.com/">8Degree Themes</a> - <strong>8Degree Themes</strong> offers 15+ free WordPress themes and 16+ premium WordPress themes carefully crafted with creativity.</p>
                         </div>
                     </div>
                    

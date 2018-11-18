@@ -25,24 +25,44 @@
 		// Pass through each active social networks and grab the share counts for the post
 		foreach( $social_networks as $network_slug ) {
 
-			if( !in_array( $network_slug, dpsp_get_networks_with_social_count() ) )
+			if( ! in_array( $network_slug, dpsp_get_networks_with_social_count() ) )
 				continue;
 
 			$share_count = dpsp_get_post_network_share_count( $post_id, $network_slug );
 
-			// Set new network shares
-			if( $share_count !== false ) {
+			if( $share_count === false )
+				continue;
 
-				// If share counts exist for this network, check to see if the new shares
-				// are greater than the existing ones. If so, replace the counts
-				if( isset( $networks_shares[$network_slug] ) )
-					$networks_shares[$network_slug] = ( $share_count > (int)$networks_shares[$network_slug] ? $share_count : (int)$networks_shares[$network_slug] ) ;
+			/**
+			 * Take into account Twitter old counts from NewShareCounts
+			 *
+			 */
+			if( $network_slug == 'twitter' && isset( $networks_shares[$network_slug] ) ) {
 
-				// If the share counts don't exist for the network, add them
-				else
-					$networks_shares[$network_slug] = $share_count;
+				$cached_old_twitter_shares = get_post_meta( $post_id, 'dpsp_cache_shares_twitter', true );
+
+				// Add the Twitter shares to the cache if they do not exist
+				if( $cached_old_twitter_shares == '' ) {
+
+					$cached_old_twitter_shares = absint( $networks_shares[$network_slug] );
+
+					update_post_meta( $post_id, 'dpsp_cache_shares_twitter', $cached_old_twitter_shares );
+
+				}
+
+				// Add the current shares to the cached ones
+				$share_count += $cached_old_twitter_shares;
 
 			}
+
+			// If share counts exist for this network, check to see if the new shares
+			// are greater than the existing ones. If so, replace the counts
+			if( isset( $networks_shares[$network_slug] ) )
+				$networks_shares[$network_slug] = ( $share_count > (int)$networks_shares[$network_slug] ? $share_count : (int)$networks_shares[$network_slug] ) ;
+
+			// If the share counts don't exist for the network, add them
+			else
+				$networks_shares[$network_slug] = $share_count;
 
 		} // End of social_networks loop
 
@@ -167,7 +187,7 @@
 				break;
 
 			case 'twitter':
-				$url = 'http://public.newsharecounts.com/count.json?url=' . $page_url ;
+				$url = 'http://opensharecount.com/count.json?url=' . $page_url ;
 				break;
 
 			case 'pinterest':

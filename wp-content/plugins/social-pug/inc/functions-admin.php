@@ -334,13 +334,24 @@
 			if( !empty($networks) ) {
 				foreach( $networks as $network_slug => $network ) {
 					$output .= '<li data-network="' . $network_slug . '">';
+
+						// The sort handle
 						$output .= '<div class="dpsp-sort-handle"><!-- --></div>';
+
+						// The social network icon
 						$output .= '<div class="dpsp-list-icon dpsp-list-icon-social dpsp-icon-' . $network_slug . '"><!-- --></div>';
+
+						// The label edit field
 						$output .= '<div class="dpsp-list-input-wrapper">';
-							$output .= '<input class="dpsp-transition" name="' . $settings_name . '[networks][' . $network_slug . '][label]" value="' . ( isset( $network['label'] ) ? esc_attr( $network['label'] ) : dpsp_get_network_name( $network_slug ) ) . '" />';
-							$output .= '<span class="dpsp-icon dpsp-icon-edit dpsp-transition"></span>';
+							$output .= '<input type="text" placeholder="' . __( 'This button has no label text.', 'social-pug' ) . '" name="' . $settings_name . '[networks][' . $network_slug . '][label]" value="' . ( isset( $network['label'] ) ? esc_attr( $network['label'] ) : dpsp_get_network_name( $network_slug ) ) . '" />';
 						$output .= '</div>';
-						$output .= '<a class="dpsp-list-remove dpsp-list-icon dpsp-icon-remove dpsp-transition" href="#"><!-- --></a>';
+
+						// List item actions
+						$output .= '<div class="dpsp-list-actions">';
+							$output .= '<a class="dpsp-list-edit-label" href="#"><span class="dashicons dashicons-edit"></span>' . __( 'Edit Label' ) . '</a>';
+							$output .= '<a class="dpsp-list-remove" href="#"><span class="dashicons dashicons-no-alt"></span>' . __( 'Remove' ) . '</a>';
+						$output .= '</div>';
+
 					$output .= '</li>';
 				}
 			}
@@ -450,13 +461,23 @@
 		// The Settings Sidebar
 		echo '<div class="dpsp-settings-sidebar">';
 
-			echo '<div>';
+			echo '<div id="dpsp-settings-sidebar-social-pug-pro">';
 
-				echo '<h3>' . __( 'Social Pug Pro', 'social-pug' ) . '</h3>';
+				echo '<h3>' . __( 'Upgrade to Social Pug Pro', 'social-pug' ) . '</h3>';
 
-				echo '<p>' . __( 'Unlock the full set of features to help you drive more traffic to your website.', 'social-pug' ) . '</p>';
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( 'Control what and how your users share on Pinterest, Facebook, Twitter and more.', 'social-pug' ) . '</p>';
 
-				echo '<a id="dpsp-to-premium" href="https://devpups.com/social-pug/features/?utm_source=plugin&amp;utm_medium=sidebar&amp;utm_campaign=social-pug" target="_blank"><i class="dashicons dashicons-external"></i>' . __( 'Upgrade to Pro', 'social-pug' ) . '</a>';
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( 'Add unlimited Click to Tweet boxes so that your users can share your content on Twitter with just one click.', 'social-pug' ) . '</p>';
+
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( 'Add a Pinterest button that appears when users hover your in-post images.', 'social-pug' ) . '</p>';
+
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( "Recover your social share counts if you've moved your website from http to https.", 'social-pug' ) . '</p>';
+
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( 'Get immediate help with priority support.', 'social-pug' ) . '</p>';
+
+				echo '<p><span class="dashicons dashicons-yes"></span>' . __( 'And much, much more...', 'social-pug' ) . '</p>';
+
+				echo '<a id="dpsp-to-premium" href="https://devpups.com/social-pug/features/?utm_source=plugin&amp;utm_medium=sidebar&amp;utm_campaign=social-pug" target="_blank">' . __( 'Upgrade to Pro', 'social-pug' ) . '</a>';
 
 			echo '</div>';
 
@@ -597,6 +618,37 @@
 
 
 	/**
+	 * Add admin notice to anounce the removal of NewShareCounts and the addition of OpenShareCount
+	 *
+	 */
+	function dpsp_admin_notice_opensharecount() {
+
+		// Do not display this notice if user cannot activate plugins
+		if( ! current_user_can( 'activate_plugins' ) )
+			return;
+
+		// Do not display this notice for users that have dismissed it
+		if( get_user_meta( get_current_user_id(), 'dpsp_admin_notice_opensharecount', true ) != '' )
+			return;
+
+		// Echo the admin notice
+		echo '<div class="dpsp-admin-notice notice notice-error">';
+
+			echo '<h4>' . __( 'Social Pug Important Notification', 'social-pug' ) . '</h4>';
+
+        	echo '<p>' . __( 'NewShareCounts, the third party Twitter share counts platform we have partnered a while ago to bring back tweet counts, has unfortunately closed.', 'social-pug' ) . '</p>';
+
+        	echo '<p>' . sprintf( __( 'To help save your Twitter share counts, we have integrated Social Pug with another third party option, namely OpenShareCount. If you were using NewShareCounts and wish to take advantage of the new integration you will have to register your website with OpenShareCount. %sTo do this click here%s.', 'social-pug' ), '<a href="http://opensharecount.com/" target="_blank">', '</a>' ) . '</p>';
+
+        	echo '<p><a href="' . add_query_arg( array( 'dpsp_admin_notice_opensharecount' => 1 ) ) . '">' . __( 'Thank you, I understand.', 'social-pug' ) . '</a></p>';
+
+        echo '</div>';
+
+	}
+	add_action( 'admin_notices', 'dpsp_admin_notice_opensharecount' );
+
+
+	/**
 	 * Add admin notice to promote Opt-In Hound
 	 *
 	 */
@@ -652,6 +704,9 @@
 
 		if( isset( $_GET['dpsp_admin_notice_promo_opt_in_hound'] ) )
 			add_user_meta( get_current_user_id(), 'dpsp_admin_notice_promo_opt_in_hound', 1, true );
+
+		if( isset( $_GET['dpsp_admin_notice_opensharecount'] ) )
+			add_user_meta( get_current_user_id(), 'dpsp_admin_notice_opensharecount', 1, true );
 
 	}
 	add_action( 'admin_init', 'dpsp_admin_notice_dismiss' );

@@ -1,49 +1,64 @@
-=== Social Sharing WordPress Plugin - Social Pug ===
+=== Social Sharing Buttons - Social Pug ===
 Contributors: iova.mihai
 Donate link: https://www.devpups.com/social-pug/
-Tags: social, social share, social sharing, social sharing buttons, social network, social share buttons, share buttons, share button, facebook button, pin button, share counter, social network share, floating share buttons, content share buttons, share counts, social share icon
+Tags: social share, social sharing, social sharing buttons, social share buttons, social, social media, social share icon, social share counts, social sharing icon
 Requires at least: 3.1
-Tested up to: 4.9.7
-Stable tag: 1.4.8
+Tested up to: 4.9.8
+Stable tag: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Social Pug adds the best looking social sharing buttons to your website and is the only social sharing plugin you will ever need.
+The best social sharing plugin for your WordPress website and the only social sharing plugin that you will ever need.
 
 == Description ==
-**Say Hello To The Best Looking Social Sharing Buttons**
+Social sharing should be an easy and pleasant experience for all your readers. Social Pug strives to offer you the best social sharing tools and to help your users share your content easily on their social profiles.
 
-Social Pug is one of the easies to use social sharing plugin available. It let's you add highly customizable social share buttons that will integrate beautifully with your website's design, leading to increased interactions and social media shares.
+**The Best Looking Social Sharing Buttons**
+
+Social Pug is one of the easies to use social sharing plugin available. It lets you add highly customizable social sharing buttons that will integrate beautifully with your website's design, leading to increased interactions and social media shares.
+
+You've probably seen all those websites with big ugly share buttons, that are just cringy to see. Your website can stand out by having the simple and beautiful social sharing buttons that Social Pug provides. PRO tip, with the premium version you can select from 8 different styles for your social buttons and even customize their colors. 
 
 The free version of the plugin comes with five of the biggest social media platforms, mainly Facebook, Twitter, Google+, Pinterest and LinkedIn.
 
-For each social media platform you can customize the share button to your liking. You can choose to have a simple social media icon share button, a share button with a bold label to catch the eye and even social sharing buttons with social share counts, so that you visitors have social media proof.
+For each social media platform you can customize the social share button to your liking. You can choose to have a simple social media icon share button, a share button with a bold label to catch the eye and even social sharing buttons with social share counts, so that you visitors have social media proof.
 
 You can place the social sharing buttons before and after the post content or have them follow your readers as they scroll up and down the page, in the form of a social media floating sidebar.
 
 **Social Share Count**: Display the posts social share count **( including Twitter )** to provide social media proof and increase your website's credibility.
 
-**Social Share Buttons Locations**: You can place the share buttons in 4 different locations of your website. You can opt in to display them before and/or after the content of your posts on whichever post type you want. Also you can choose to display the buttons in a floating sidebar that follows the user as he/she scrolls the page. The floating sidebar can be placed on the left or on the right side of the screen.
+**Social Share Buttons Locations**: You can place the social sharing buttons in 4 different locations of your website. You can opt in to display them before and/or after the content of your posts on whichever post type you want. Also you can choose to display the social share buttons in a floating sidebar that follows the user as he/she scrolls the page. The floating sidebar can be placed on the left or on the right side of the screen.
 
 = Main Features =
 * **Before and After Content Social Share Buttons** - Place the social share buttons right before your content, after your content or both
 * **Floating Sidebar Social Share Buttons** - Make the social share buttons follow the user as he/she scrolls up and down your webpage by adding floating buttons on the left or right side of the screen
-* **Social Share Counts and Total Share Counts** - Display social share counts for all social networks, including Twitter
+* **Social Share Counts and Total Share Counts** - Display social share counts for all social media networks, including Twitter
 * **Editable Button Labels** - Edit the labels that appear in the share buttons, to maximize your engagement
 * **Retina Ready Sharp Share Icons** - Social Pug uses an icon font to display the best looking social media icons on any screen
 
 = Premium Features =
-* **10+ Social Networks more** - Reach more people by adding any of the following social share networks StumbleUpon, Reddit, VK, Yummly, WhatsApp, Buffer, Telegram, Flipboard, Pocket, Tumblr and Email
+* **10+ Social Media Networks more** - Reach more people by adding any of the following social share networks StumbleUpon, Reddit, VK, Yummly, WhatsApp, Buffer, Telegram, Flipboard, Pocket, Tumblr and Email
 * **Mobile Sticky Footer Social Share Buttons** - Your website needs to be mobile ready and Social Pug is here to help
 * **Pop-Up Social Share Buttons** - Trigger a pop-up with the social sharing buttons when a user does an action 
 * **Custom Button Colors and Hover Colors** - The social networks colors are beautiful, but you don't have to limit yourself. Add any color to your social share buttons to match your website's design.
-* **Shortcode for Social Share Buttons** - Place the buttons anywhere in your template files or the body of your content with the [socialpug_share] shortcode
+* **Shortcode for Social Share Buttons** - Place the social sharing buttons anywhere in your template files or the body of your content with the [socialpug_share] shortcode
 * **Link Shortening through Bitly** - Hide long URL's behind their shorter version with the Bitly integration
 * **Google Analytics UTM tracking** - Track the source of your incoming traffic with the help of the Google Analytics UTM parameters
-* **Social Media Follow Buttons Widget** - Place social media follow buttons for the following social media networks: Facebook, Twitter, Google+, Pinterest, LinkedIn, Reddit, Instagram, YouTube, Vimeo, SoundCloud, Twitch, Yummly and Behance. Use the [socialpug_follow] shortcode to place the follow buttons anywere in your template files
+* **Social Media Follow Buttons Widget** - Place social media follow buttons for the following social media networks: Facebook, Twitter, Google+, Pinterest, LinkedIn, Reddit, Instagram, YouTube, Vimeo, SoundCloud, Twitch, Yummly and Behance. Use the [socialpug_follow] shortcode to place the follow buttons anywhere in your template files
 * **Sharable Quotes ( Click to Tweet ) Feature** - Let your readers easily share a custom tweet with just one click
-* **Top Social Media Shared Posts Widget** - Want to showcase your most shared articles? No problem. You can use this widget in any widget area to add your top shared posts
+* **Top Social Media Shared Posts Widget** - Want to showcase your most social shared articles? No problem. You can use this widget in any widget area to add your top shared posts
 * **Import / Export Settings** - Move all the settings from one website to another with just a few clicks
+
+= Powerful Social Sharing Features =
+
+**Display Social Proof**
+Display social sharing counts for each social media network, for positive social media proof.
+
+**Click to Tweet**
+Click to Tweet boxes are one of the best way for your readers to share content on their Twitter social profile. With just one click the custom tweet will be shared.
+
+**Social Media Custom Content**
+Customize the social media images and descriptions that your users share on their social media profiles. You can add custom social data for Open Graph tags, custom Tweets and custom Pinterest images and descriptions.
 
 = Help us Translate =
 We want to reach as many people as possible. Help us translate the plugin in your language and get a 20% discount code for your premium purchases. Contact us here: http://devpups.com/support/
@@ -67,33 +82,40 @@ http://www.devpups.com/
 
 = What social sharing buttons are supported? =
 
-We currently support Facebook, Twitter, Google+, Pinterest and LinkedIn as social sharing buttons in the free version. The Pro version adds many more social media networks for both social share and social follow.
+We currently support Facebook, Twitter, Google+, Pinterest and LinkedIn as social sharing buttons in the free version. The Pro version adds many more social media networks for both social sharing and social follow.
 
-= Can I activate tweet count for my Twitter social share button? =
+= Can I activate tweet count for my Twitter social sharing button? =
 
-Twitter has officially removed support for the tweet count of a URL. Luckily a third party application, namely NewShareCounts, has come to provide an alternative solution. Social Pug has partnered with NewShareCounts to provide social sharing proof for your Twitter social share button.
+Twitter has officially removed support for the tweet count of a URL. Luckily a third party application, namely OpenShareCount, has come to provide an alternative solution. Social Pug has partnered with OpenShareCount to provide social sharing proof for your Twitter social sharing button.
 
 = Can I customize the social information that is being shared on social media? =
 
 By default Social Pug will use the post's title and featured image to populate what is being shared on the social platforms. If you wish to have full control on what gets shared when a visitor uses the social sharing buttons, please visit our website and check out Social Pug premium.
 
-= Will your social share plugin slow down my website? =
+= Will your social sharing plugin slow down my website? =
 
 No. Social Pug is a lightweight plugin that was built with efficiency in mind. Unlike other social sharing plugins, Social Pug will not slow down your website.
 
 = Can I place the social share buttons only on posts and pages? =
 
-You can place both the inline share buttons and the floating sidebar sharing buttons on any custom post type that your WordPress installation has registered. You are not limited to only posts and pages.
+You can place both the inline social share buttons and the floating sidebar social sharing buttons on any custom post type that your WordPress installation has registered. You are not limited to only posts and pages.
 
 
 == Screenshots ==
-1. Inlin-Content Social Sharing Buttons Output
-2. Floating Sidebar Social Share Buttons Output
-3. Floating Sidebar Social Share Buttons Configuration Page
-4. Before and After Content Social Sharing Buttons Configuration Page
+1. Inline-Content social sharing buttons output
+2. Floating Sidebar social share buttons output
+3. Floating Sidebar social share buttons configuration page
+4. Before and After Content social sharing buttons configuration page
 
 
 == Changelog ==
+
+= 1.5.0 =
+* New: Add a Twitter handle to the tweet generated when clicking on the Twitter social sharing button.
+* Fixed: Issue with inline social share button labels being added to Yoast meta descriptions.
+
+= 1.4.9 =
+* New: Removed support for NewShareCounts in favor of support for OpenShareCount to retrieve Twitter social share counts.
 
 = 1.4.8 =
 * Misc: Small admin user interface improvements to make the plugin more user friendly.
@@ -141,11 +163,11 @@ You can place both the inline share buttons and the floating sidebar sharing but
 * Misc: Added support for Twitter summary card with large image
 
 = 1.3.5 =
-* New: Added option to set a custom value for the mobile device screen width in order to display or hide the social media share buttons
+* New: Added option to set a custom value for the mobile device screen width in order to display or hide the social sharing buttons
 * Misc: Updated the social media icon font
 
 = 1.3.4 =
-* New: Added Facebook App Secret field in the settings page in order to unlock Facebook's default limitations when trying to grab the share counts for a post
+* New: Added Facebook App Secret field in the settings page in order to unlock Facebook's default limitations when trying to grab the social share counts for a post
 
 = 1.3.3 =
 * New: Added Facebook App ID field in the settings page in order for posts to pass Facebook's App ID validation
